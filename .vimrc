@@ -51,11 +51,11 @@ set ssop-=folds
  
 " For GVim
 if has("gui_running")
-    set guioptions-=m   "remove menu bar
-    set guioptions-=T   "removes top toolbar
-    set guioptions-=r   "removes right-hand scroll bar
-    set guioptions-=L   "remove left-hand scroll bar
-    set t_Co=256        "use 256 colors if terminal supports it
-    colorscheme codeschool
-    set guiheadroom=0
+  set guioptions-=m   "remove menu bar
+  set guioptions-=T   "removes top toolbar
+  set guioptions-=r   "removes right-hand scroll bar
+  set guioptions-=L   "remove left-hand scroll bar
+  set t_Co=256        "use 256 colors if terminal supports it
+  colorscheme codeschool
+  set guiheadroom=0
 endif
