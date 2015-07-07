@@ -1,0 +1,6 @@
+[submodule ".vim/bundle/vim-startify"]
+	path = .vim/bundle/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
+[submodule ".vim/bundle/codeschool-vim-theme"]
+	path = .vim/bundle/codeschool-vim-theme
+	url = https://github.com/29decibel/codeschool-vim-theme.git
