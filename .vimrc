@@ -1,8 +1,10 @@
 " Pathogen
 execute pathogen#infect()
 
-" Default colorscheme
-colorscheme pyte
+" Colorscheme for non-Windows
+if !(has("win32") || has("win64"))
+  colorscheme gruvbox
+endif
  
 " Disable vi-compatibility
 set nocompatible
@@ -59,6 +61,7 @@ if has("gui_running")
   set guioptions-=r   "removes right-hand scroll bar
   set guioptions-=L   "remove left-hand scroll bar
   set t_Co=256        "use 256 colors if terminal supports it
-  colorscheme codeschool
+  colorscheme pyte
+  set guifont=Source\ Code\ Pro:h10
   set guiheadroom=0
 endif
