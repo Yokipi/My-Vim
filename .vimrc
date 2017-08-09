@@ -1,5 +1,8 @@
 " Pathogen
 execute pathogen#infect()
+
+" Default colorscheme
+colorscheme pyte
  
 " Disable vi-compatibility
 set nocompatible
