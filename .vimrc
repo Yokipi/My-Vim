@@ -53,6 +53,9 @@ syntax enable
 " Sessions
 set ssop-=options
 set ssop-=folds
+
+" Default compilers
+au BufEnter *.c compiler gcc
  
 " For GVim
 if has("gui_running")
