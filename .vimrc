@@ -68,6 +68,7 @@ set ssop-=folds
 " Startify settings
 let g:startify_session_persistence = 1
 let g:startify_files_number = 5
+let g:startify_custom_header = []
 
 " Default compilers
 au BufEnter *.c compiler gcc
