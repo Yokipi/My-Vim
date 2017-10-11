@@ -1,5 +1,6 @@
 " Pathogen
-execute pathogen#infect()
+call pathogen#infect()
+call pathogen#helptags()
 
 " Colorscheme for non-Windows
 if !(has("win32") || has("win64"))
@@ -29,6 +30,12 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set smartindent
+
+" Backspace functionality
+set backspace=indent,eol,start
+
+" Show cursor position
+set ruler
  
 " Searching, default ignorecase unless there is an upper-case letter
 set ignorecase
@@ -54,6 +61,10 @@ syntax enable
 set ssop-=options
 set ssop-=folds
 
+" Startify settings
+let g:startify_session_persistence = 1
+let g:startify_files_number = 5
+
 " Default compilers
 au BufEnter *.c compiler gcc
  
@@ -67,4 +78,6 @@ if has("gui_running")
   colorscheme pyte
   set guifont=Source\ Code\ Pro:h10
   set guiheadroom=0
+  set lines=50        "start with a certain height
+  set showtabline=2   "always show tab bar
 endif
