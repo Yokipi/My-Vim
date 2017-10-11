@@ -55,7 +55,8 @@ map k gk
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Shortcut for 'git ac'
-nmap <Leader>git :!git ac 
+nmap <Leader>add :!git ac 
+nmap <Leader>push :!git push 
  
 " Enable syntax highlighting
 syntax enable
