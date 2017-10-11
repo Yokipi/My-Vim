@@ -53,6 +53,9 @@ map k gk
  
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" Shortcut for 'git ac'
+nmap <Leader>git :!git ac 
  
 " Enable syntax highlighting
 syntax enable
